@@ -29,7 +29,6 @@ body{
         width: 100%;
         background: white;
         height: 4rem;
-        border: 1px solid black;
         display: flex;
         justify-content: space-evenly;
         padding: 1rem;
@@ -194,12 +193,34 @@ body{
 }
 
 
-
+//css for about-page
 .about-container{
-    position: relative;
 
     .about-heading-section{
+        position: relative;
+        width: 100%;
+        height: 20rem;
+        background: rgba($color: $color-btn, $alpha: .8);
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        align-items: center;
         
+
+        .about-heading-image{
+            position: absolute;
+            width: 100%;
+            top:-10rem;
+            z-index: -5;
+        }
+
+        .about-heading{
+            color:white;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 }
 

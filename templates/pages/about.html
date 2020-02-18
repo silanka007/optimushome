@@ -1,13 +1,22 @@
 {% extends './base.html' %}
 
 {% block content %}
+{% load static %}
 <main class="about-container">
     <div class="about-heading-section">
-        <img src="" alt="">
+        <img class="about-heading-image" src="{% static './img/about_heading.jpg' %}" alt="">
         <div class="about-heading">
             <h1 class="about-heading-title">About OptimusHome Real Estate</h1>
-            <p class="about-heading-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quis voluptas tenetur, molestiae deleniti odio.</p>
+            <p class="about-heading-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
+    </div>
+    <div class="about-info">
+        <section class="about-info-item">
+            <h2 class="about-info-item-title"></h2>
+        </section>
+        <section class="about-seller-of-the-month">
+            <h2 class="about-seller-of-the-month-title"></h2>
+        </section>
     </div>
 </main>
 {% endblock %}
