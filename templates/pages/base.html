@@ -1,12 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './css/styles.css' %}">
     <title>OptimusHome</title>
 </head>
+
 <body>
-    
-    
+    <!-- header section -->
+    {% include './partials/_header.html' %}
+
+    <!-- main block section -->
+    {% block content %}{% endblock %}
+
+    <!-- footer section -->
+    {% include './partials/_footer.html' %}
 </body>
 </html>
