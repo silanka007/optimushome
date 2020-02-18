@@ -242,6 +242,31 @@ body {
           justify-content: center;
 }
 
+.about-container .about-info-container {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.about-container .about-info-container .about-info {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-container .about-info-container .about-info .breadcrumb-list {
+  background: rgba(43, 88, 78, 0.2);
+  height: 4rem;
+}
+
+.about-container .about-info-container .about-info .breadcrumb-list .breadcrumb-items {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.about-container .about-info-container .about-info .breadcrumb-list .breadcrumb-items a {
+  text-decoration: none;
+  color: black;
+}
+
 .footer {
   width: 100%;
   margin-top: auto;

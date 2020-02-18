@@ -11,9 +11,21 @@
             <h1><a href="{% url 'home' %}">OPTIMUSHOME</a></h1>
         </div>
         <ul class="nav-left">
-            <li class="nav-left-item"><a href="{% url 'home' %}">home</a></li>
-            <li class="nav-left-item"><a href="{% url 'about' %}">about</a></li>
-            <li class="nav-left-item"><a href="{% url 'home' %}">featured listings</a></li>
+            <li class="nav-left-item">
+                <a href="{% url 'home' %}" {% if '/' == request.path %} style="color: rgb(11, 150, 108); border-bottom: 1px solid" {% endif %}>
+                    home
+                </a>
+            </li>
+            <li class="nav-left-item">
+                <a href="{% url 'about' %}" {% if 'about' in request.path %} style="color: rgb(11, 150, 108); border-bottom: 1px solid" {% endif %}>
+                    about
+                </a>
+            </li>
+            <li class="nav-left-item">
+                <a href="{% url 'home' %}">
+                    featured listings
+                </a>
+            </li>
         </ul>
         <ul class="nav-right">
             <li class="nav-left-item"><a href="">register</a></li>
