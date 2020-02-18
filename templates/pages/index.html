@@ -1,7 +1,64 @@
 {% extends './base.html' %}
 
 {% block content %}
+{% load static %}
+<main class="main">
+    <img class="heading-img" src="{% static './img/heading.jpg' %}" alt="">
+    <div class="heading-hero">
+        <section class="heading-hero">
+            <h2 class="heading-hero-heading">Property Searching Just Got So Easy</h2>
+            <p class="heading-hero-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Nulla exercitationem voluptatem deleniti perspiciatis recusandae
+                  minima eos excepturi, illo at quos.
+            </p>
+            <form action="">
+                <div class="heading-search-form">
+                    <input class="heading-form-group" type="text" name="keyword" id="keyword" placeholder="keyword(pool, garage)">
+                    <input class="heading-form-group" type="text" name="city" id="city" placeholder="city">
+                    <select class="heading-form-group" name="state" id="state">
+                        <option value="">State(All)</option>
+                        <option value="anambra">Anambra</option>
+                        <option value="abuja">Abuja</option>
+                        <option value="lagos">Lagos</option>
+                        <option value="delta">Delta</option>
+                    </select>
+                    <select class="heading-form-group" name="bedroom" id="bedroom" placeholder="Bedroom">
+                        <option value="">Bedrooms(All)</option>
+                        <option value="1">1</option>
+                        <option value= "2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <select class="heading-form-group" name="maxprice" id="maxprice">
+                        <option value="">Max-Price(Any)</option>
+                        <option value="">#250,000</option>
+                        <option value="">#350,000</option>
+                        <option value="">#500,000</option>
+                        <option value="">#1,000,000</option>
+                    </select>
+                </div>
+                <button type="submit" class="button-group">Submit Form</button>
+            </form>
+        </section>
+    </div>
+    <section class="house-listing" style="background: white">
+       <h1>this is for listing of available houses</h1>
+    </section>
+    <div class="features">
+        <section class="feature-item">
+            <h2 class="feature-item-heading">Consulting Services</h2>
+            <p class="feature-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eligendi laborum ab perspiciatis assumenda tempora id aperiam quaerat ipsum beatae.</p>
+        </section>
+        <section class="feature-item">
+            <h2 class="feature-item-heading">Project Management</h2>
+            <p class="feature-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eligendi laborum ab perspiciatis assumenda tempora id aperiam quaerat ipsum beatae.</p>
+        </section>
+        <section class="feature-item">
+            <h2 class="feature-item-heading">Renting and Selling</h2>
+            <p class="feature-item-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eligendi laborum ab perspiciatis assumenda tempora id aperiam quaerat ipsum beatae.</p>
+        </section>
+    </div>
+    
+</main>
 
-<h1>home page</h1>
-<h1>home page</h1>
 {% endblock %}

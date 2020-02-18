@@ -2,6 +2,9 @@
     font-family : interstate;
     src: url('./interstatelightregular-webfont.woff'), url('./interstatelightregular-webfont.woff2');
 }
+// variables
+$color-hf : rgb(13, 18, 59);
+
 
 html{
     font-size: 10px;
@@ -24,10 +27,12 @@ body{
     .navigation{
         width: 100%;
         background: white;
-        height: 3rem;
+        height: 4rem;
         border: 1px solid black;
         display: flex;
         justify-content: space-evenly;
+        padding: 1rem;
+
     
         .navigation-email{
             a{
@@ -40,8 +45,18 @@ body{
     .nav{
         width: 100%;
         display: flex;
-        background: rgb(13, 18, 59);
+        background: $color-hf;
         justify-content: space-around;
+
+        .logo{
+            h1{
+                padding: 1.6rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
 
         .nav-left{
             display: flex;
@@ -63,11 +78,84 @@ body{
     }
 }
 
+// home page section
+.main{
+    position: relative;
+
+    .heading-img{
+        width: 100vw;
+        position: fixed;
+        top: -5rem;
+        z-index: -1;
+    }
+
+    .heading-hero{
+        width: 100%;
+        height: 50rem;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .heading-hero{
+            width: 65%;
+            background: rgba(5, 5, 5, 0.486);
+            height: 35rem;
+            margin: auto;
+            padding: 3rem;
+            color: white;
+            text-align: center;
+
+            .heading-hero-heading{
+                font-size: 5rem;
+                padding-bottom: 2rem;
+            }
+
+            .heading-hero-paragraph{
+                padding-bottom: 1rem;
+            }
+
+            .heading-search-form{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: space-between;
+
+                .heading-form-group{
+                    min-width: 30%;
+                    height: 4rem;
+                    margin: 1rem;
+                    flex: 1 1 auto;
+                    border-radius: .5rem;
+                }
+            }
+        }
+    }
+}
+
+//button decors
+.button-group{
+    width: 98%;
+    height: 3.5rem;
+    color: white;
+    background: rgb(11, 150, 108);
+    outline: none;
+    border: none;
+
+    &:active{
+        outline: 2px solid  rgb(118, 230, 196);
+        outline-offset: .1rem;
+    }
+}
+
+
+
 .footer{
     width: 100%;
     margin-top: auto;
-    background: rgb(13, 18, 59);
+    background: $color-hf;
     color:white;
+    z-index: 5;
     
 
     .footer-item{
