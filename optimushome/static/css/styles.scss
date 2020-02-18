@@ -52,7 +52,7 @@ body{
             display: inline-block;
             list-style-type: none;
             
-            padding: 1rem;
+            padding: 2rem;
 
             a{
                text-decoration: none; 
@@ -60,6 +60,19 @@ body{
                text-transform: uppercase;
             }
         }
+    }
+}
+
+.footer{
+    width: 100%;
+    margin-top: auto;
+    background: rgb(13, 18, 59);
+    color:white;
+    
+
+    .footer-item{
+        text-align: center;
+        padding: 2rem;
     }
 }
 

@@ -2,5 +2,5 @@ venv
 vscode
 db.sqlite3
 .vscode 
-.idea
+.idea/
 
