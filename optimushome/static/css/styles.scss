@@ -24,6 +24,21 @@ body{
     box-sizing: inherit;
 }
 
+//button decors
+.button-group{
+    width: 98%;
+    height: 3.5rem;
+    color: white;
+    background: $color-btn;
+    outline: none;
+    border: none;
+
+    &:active{
+        outline: 2px solid  rgb(118, 230, 196);
+        outline-offset: .1rem;
+    }
+}
+
 .header{
     .navigation{
         width: 100%;
@@ -177,20 +192,7 @@ body{
     }
 }
 
-//button decors
-.button-group{
-    width: 98%;
-    height: 3.5rem;
-    color: white;
-    background: $color-btn;
-    outline: none;
-    border: none;
 
-    &:active{
-        outline: 2px solid  rgb(118, 230, 196);
-        outline-offset: .1rem;
-    }
-}
 
 
 //css for about-page
@@ -246,8 +248,47 @@ body{
                     
                 }
             }
+
+            .about-info-section{
+                display: flex;
+                justify-content: space-between;
+
+                .about-info-item{
+                    margin-right: 2rem;
+                }
+
+                .about-seller-of-the-month{
+                    border: 1px solid black;
+                }
+            }
         }
     }
+
+    .center-hero{
+        width: 100%;
+        height: 30rem;
+        background-color: rgb(22, 29, 37);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .center-hero-title{
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        a{
+            display: inline-block;
+            width: auto;
+            text-decoration: none;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .about-team{}
 
 }
 

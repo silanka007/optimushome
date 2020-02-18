@@ -22,6 +22,20 @@ body {
           box-sizing: inherit;
 }
 
+.button-group {
+  width: 98%;
+  height: 3.5rem;
+  color: white;
+  background: #0b966c;
+  outline: none;
+  border: none;
+}
+
+.button-group:active {
+  outline: 2px solid #76e6c4;
+  outline-offset: .1rem;
+}
+
 .header .navigation {
   width: 100%;
   background: white;
@@ -191,20 +205,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.button-group {
-  width: 98%;
-  height: 3.5rem;
-  color: white;
-  background: #0b966c;
-  outline: none;
-  border: none;
-}
-
-.button-group:active {
-  outline: 2px solid #76e6c4;
-  outline-offset: .1rem;
-}
-
 .about-container .about-heading-section {
   position: relative;
   width: 100%;
@@ -265,6 +265,56 @@ body {
 .about-container .about-info-container .about-info .breadcrumb-list .breadcrumb-items a {
   text-decoration: none;
   color: black;
+}
+
+.about-container .about-info-container .about-info .about-info-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-container .about-info-container .about-info .about-info-section .about-info-item {
+  margin-right: 2rem;
+}
+
+.about-container .about-info-container .about-info .about-info-section .about-seller-of-the-month {
+  border: 1px solid black;
+}
+
+.about-container .center-hero {
+  width: 100%;
+  height: 30rem;
+  background-color: #161d25;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-container .center-hero .center-hero-title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.about-container .center-hero a {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
 .footer {
