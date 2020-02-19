@@ -88,6 +88,7 @@ body {
 .breadcrumb-list .breadcrumb-items a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 .header .navigation {
