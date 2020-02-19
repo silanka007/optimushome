@@ -1,27 +1,22 @@
-{% extends './base.html' %}
+{% extends '../base.html' %}
 
 {% block content %}
 {% load static %}
 
-<main class="about-container">
-    <div class="about-heading-section">
-        <img class="about-heading-image" src="{% static './img/about_heading.jpg' %}" alt="">
-        <div class="about-heading">
-            <h1 class="about-heading-title">About OptimusHome Real Estate</h1>
-            <p class="about-heading-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-    </div>
+<div class="about-container">
+    
+    {% include '../partials/_heading.html' %}
+
     <div class="about-info-container">
         <div class="about-info">
-            <ul class="breadcrumb-list">
-                <li class="breadcrumb-items"><a href=""><i class="fas fa-home"></i> Home</a></li> |
-                <li class="breadcrumb-items"><a href="">About</a></li>
-            </ul>
+
+            {% include '../partials/_breadcrumb.html' %}
+
             <div class="about-info-section">
                 <section class="about-info-item">
                     <h2 class="about-info-item-title">We Search For The Perfect Home</h2>
-                    <img src="{% static './img/about_info.jpg' %}" alt="" class="about-info-item-image">
                     <p class="about-info-item-paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, perferendis?</p>
+                    <img src="{% static './img/about_info.jpg' %}" alt="" class="about-info-item-image">
                     <p class="about-info-item-paragraph2">
                         Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Asperiores officiis, ab recusandae in similique pariatur aut nobis velit perspiciatis!
@@ -39,7 +34,7 @@
     <section class="center-hero">
         <h2 class="center-hero-title">We Work For You</h2>
         <p class="center-hero-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, eaque.</p>
-        <a href="#" class="button-group">View Our Featured Listings</a>
+        <a href="{% url 'listings' %}" class="button-group">View Our Featured Listings</a>
     </section>
     <section class="about-team">
         <div class="about-team-item">
@@ -48,6 +43,6 @@
             <p class="about-team-item-email">onyekwelupaulo@gmail.com</p>
         </div>
     </section>
-</main>
+</div>
 
 {% endblock %}

@@ -1,0 +1,9 @@
+
+<ul class="breadcrumb-list">
+    <li class="breadcrumb-items"><a href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a></li> |
+    {% if 'about' in request.path %}
+        <li class="breadcrumb-items"><a href="{% url 'about' %}">About</a></li>
+    {% elif 'listings' in request.path %}
+        <li class="breadcrumb-items"><a href="{% url 'listings' %}">Listings</a></li>
+    {% endif %}
+</ul>

@@ -39,6 +39,54 @@ body{
     }
 }
 
+//heading section for about and listing
+.about-heading-section{
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background: rgba($color: $color-btn, $alpha: .8);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+
+    .about-heading-image{
+        position: absolute;
+        width: 100%;
+        top:-10rem;
+        z-index: -5;
+    }
+
+    .about-heading{
+        color:white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+//breadcrumbs partial css
+.breadcrumb-list{
+    background: rgba($color: rgba(43, 88, 78, 0), $alpha: .2);
+    height: 4rem; 
+    border-radius: .5rem;
+    margin-bottom: 2rem;               
+
+    .breadcrumb-items{
+        display: inline-block;
+        padding: 1rem;
+
+        a{
+            text-decoration: none;
+            color: black; 
+        }
+        
+    }
+}
+
+
 .header{
     .navigation{
         width: 100%;
@@ -47,12 +95,21 @@ body{
         display: flex;
         justify-content: space-evenly;
         padding: 1rem;
+        color: $color-hf;
 
     
         .navigation-email{
             a{
                 text-decoration: none;
-                color: black;
+                color: $color-hf;
+            }
+        }
+
+        .socials-item{
+            padding: .4rem;
+            
+            i{
+                color: $color-hf;
             }
         }
     }
@@ -94,7 +151,7 @@ body{
 }
 
 // home page section
-.main{
+.home-page{
     position: relative;
 
     .heading-img{
@@ -198,33 +255,6 @@ body{
 //css for about-page
 .about-container{
 
-    .about-heading-section{
-        position: relative;
-        width: 100%;
-        height: 20rem;
-        background: rgba($color: $color-btn, $alpha: .8);
-        overflow: hidden;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        
-
-        .about-heading-image{
-            position: absolute;
-            width: 100%;
-            top:-10rem;
-            z-index: -5;
-        }
-
-        .about-heading{
-            color:white;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-
     .about-info-container{
         margin: 2rem 0;
         width: 100%;
@@ -232,22 +262,6 @@ body{
         .about-info{
             width: 70%;
             margin: 0 auto;
-
-            .breadcrumb-list{
-                background: rgba($color: rgba(43, 88, 78, 0), $alpha: .2);
-                height: 4rem;                
-
-                .breadcrumb-items{
-                    display: inline-block;
-                    padding: 1rem;
-
-                    a{
-                        text-decoration: none;
-                        color: black; 
-                    }
-                    
-                }
-            }
 
             .about-info-section{
                 display: flex;
@@ -292,7 +306,13 @@ body{
 
 }
 
+//css styling for listings page
+.listings-section{
+    width: 70%;
+    margin: 2rem auto;
+}
 
+//css styling for footer
 .footer{
     width: 100%;
     margin-top: auto;

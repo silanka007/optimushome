@@ -1,0 +1,14 @@
+{% load static %}
+
+<div class="about-heading-section">
+    <img class="about-heading-image" src="{% static './img/about_heading.jpg' %}" alt="">
+    <div class="about-heading">
+        {% if 'about' in request.path %}
+            <h1 class="about-heading-title">About OptimusHome Real Estate</h1>
+            <p class="about-heading-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        {% elif 'listings' in request.path %}
+            <h1 class="about-heading-title">Browse Our Properties</h1>
+            <p class="about-heading-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        {% endif %}
+    </div> 
+</div>
