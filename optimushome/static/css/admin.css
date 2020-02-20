@@ -1,0 +1,16 @@
+#header{
+    color: white;
+    background-color: rgb(13, 18, 59);
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited{
+    color: white;
+}
+
+div.breadcrumbs, .module h2, .module caption, .inline-group h2{
+    background-color: rgb(11, 150, 108);
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background-color: rgb(13, 18, 59);
+}
