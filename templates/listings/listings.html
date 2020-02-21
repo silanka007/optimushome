@@ -6,6 +6,33 @@
 
 <section class="listings-section">
    {% include '../partials/_breadcrumb.html' %} 
+   <div class="listing-container">
+      {% if listings %}
+         {% for listing in listings %}
+            <section class="listing">
+               <img src="{{ listing.photo_main.url }}" alt="featured listing" class="listing-image">
+               <p class="listing-price">${{listing.price}}</p>
+               <h1 class="listing-title">{{listing.title}}</h1>
+               <p class="listing-address">{{listing.address}}</p>
+               <div class="listing-feature">
+                  <div class="listing-feature-item">Sqft: {{listing.sqft}}</div>
+                  <div class="listing-feature-item">Garage: {{listing.garage}}</div>
+                  <div class="listing-feature-item">Bedrooms: {{listing.bedrooms}}</div>
+                  <div class="listing-feature-item">Bathrooms: {{listing.bathrooms}}</div>
+               </div>
+               <div class="listing-footer">
+                  <p class="listing-realtor">{{listing.realtor}}</p>
+                  <p class="listing-date">{{listing.list_date}}</p>
+               </div>
+               <div class="listing-more-info">
+                  <a href="{% url 'listing' listing.id %}">More Info</a>
+               </div>
+            </section>
+         {% endfor %}
+      {% else %}
+         <div class="listing-none">No listing Available</div>
+      {% endif %}
+   </div>
 </section>
 
 

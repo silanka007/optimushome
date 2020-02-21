@@ -311,6 +311,83 @@ body{
 .listings-section{
     width: 70%;
     margin: 2rem auto;
+
+    .listing-container{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .listing{
+            width: 30%;
+            // height: 45rem;
+            margin-bottom: 2rem;
+            position: relative;
+            border: .5px solid rgb(219, 215, 215);
+
+            .listing-image{
+                width: 100%;
+            }
+
+            .listing-price{
+                position: absolute;
+                top: 2rem;
+                left: 2rem;
+                background: $color-btn;
+                color: white;
+                font-weight: 900;
+                font-size: 2rem;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .listing-title{
+                // display: inline-block;
+                font-size: 2rem;
+                font-weight: bolder;
+                margin: 1rem auto;
+                width: 100%;
+                text-align: center;
+            }
+            .listing-address{
+                margin: auto;
+                text-align: center;
+                padding-bottom: 2rem;
+                border-bottom: .5px solid rgb(219, 215, 215);
+            }
+
+            .listing-feature{
+                border-bottom: .5px solid rgb(219, 215, 215);
+                padding: 2rem;
+                display: flex;
+                flex-wrap: wrap;
+                color: $color-btn;
+
+                .listing-feature-item{
+                    width: 50%;
+                }
+            }
+
+            .listing-footer{
+                border-bottom: .5px solid rgb(219, 215, 215);
+                color: $color-btn;
+                padding: 2rem;
+            }
+            .listing-more-info{
+                
+                a:link, a:visited{
+                    background-color: $color-hf;
+                    display: block;
+                    padding: 1rem;
+                    color: white !important;
+                    margin: 2rem;
+                    border-radius: .5rem;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 //css styling for footer
